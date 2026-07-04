@@ -4,20 +4,18 @@
 <head>
 
 <meta charset="UTF-8">
-
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Tap & Win</title>
 
-<meta name="theme-color" content="#000000">
-
-<link rel="stylesheet" href="style.css">
+<meta name="theme-color" content="#111111">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
-
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
 
 <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
 
@@ -27,25 +25,31 @@
 
 <!-- HERO -->
 
-<section class="hero">
+<section id="hero">
 
-<div class="overlay"></div>
+<div class="hero-overlay"></div>
 
-<img src="images/hero.jpg" class="hero-image">
+<img
+class="hero-image"
+src="images/hero.jpg"
+alt="Barbershop">
 
 <div class="hero-content">
 
-<img src="images/logo.png" class="logo">
+<img
+src="images/logo.png"
+class="logo"
+alt="Logo">
 
 <h1>TAP & WIN</h1>
 
 <p>
 
-Tap your phone.
+Tap your phone...
 
-Spin the wheel.
+Spin the wheel...
 
-Win amazing prizes.
+Win amazing prizes!
 
 </p>
 
@@ -61,27 +65,38 @@ START
 
 <!-- GAME -->
 
-<section class="game hidden" id="game">
+<section id="game" class="hidden">
 
-<div class="game-top">
+<div class="top">
 
-<img src="images/logo.png" class="small-logo">
+<img
+src="images/logo.png"
+class="small-logo"
+alt="Logo">
 
-<h2>Spin The Wheel</h2>
+<h2>
+
+Spin The Wheel
+
+</h2>
 
 <p>
 
-Good luck!
+Good Luck!
 
 </p>
 
 </div>
 
-<div class="wheel-container">
+<div class="wheel-box">
 
 <div class="pointer"></div>
 
-<canvas id="wheel" width="420" height="420"></canvas>
+<canvas
+id="wheelCanvas"
+width="500"
+height="500">
+</canvas>
 
 </div>
 
@@ -91,21 +106,23 @@ SPIN NOW
 
 </button>
 
-<div id="result" class="hidden">
+<div
+id="resultBox"
+class="hidden">
 
-<h2 id="titleResult">
+<h2 id="resultTitle">
 
 Congratulations!
 
 </h2>
 
-<h3 id="prizeResult">
+<h3 id="resultPrize">
 
-FREE COFFEE
+FREE HAIRCUT
 
 </h3>
 
-<button id="playAgain">
+<button id="againBtn">
 
 PLAY AGAIN
 
@@ -114,6 +131,20 @@ PLAY AGAIN
 </div>
 
 </section>
+
+<footer>
+
+Powered by
+
+<strong>
+
+Tap & Win
+
+</strong>
+
+</footer>
+
+<!-- AUDIO -->
 
 <audio id="spinSound">
 
